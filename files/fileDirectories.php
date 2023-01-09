@@ -17,4 +17,29 @@ foreach($result as $dir){
     echo $dir ;
     }
 }
+echo "<br>";
+// Remove . and .. directories
+$directory = array_diff($result, ['.', '..']);
+var_dump($directory);
+
+
+//Sample 2 and 3
+/**
+ *  3. Check Directory
+ * 4. Copy Files between directories/
+ */
+
+ echo "<br>";
+$result = scandir($path);
+
+$result = array_diff($result , ['.', '..']);
+
+foreach($result as $dir){
+    if(is_file($path . "/" . $dir)){
+        echo $dir;
+    }
+}
+echo "<br>";
+
+
 ?>
