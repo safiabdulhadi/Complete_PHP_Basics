@@ -8,10 +8,10 @@
 </head>
 <body>
     <?php
-    // Define a Variable 
+    // Define a Variable
     $aboutMe = "I am Abdulhadi and I love PHP Programing";
     echo " <h1> About Me:";
-    echo $aboutMe; // Printing the Variable
+    echo $aboutMe; // Printing the Variable s
     ?>
 
 
