@@ -41,5 +41,14 @@ foreach($result as $dir){
 }
 echo "<br>";
 
+$result = glob("*.php");
+var_dump($result);
 
+echo "<br>";
+
+if(!file_exists("TestFolder3")){
+    mkdir("TestFolder3");
+}
+// Copy Files
+copy("TestFolder1/fileDirectories.php", "TestFolder3/fileDirectories3.php");
 ?>
